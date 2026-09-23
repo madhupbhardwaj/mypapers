@@ -1,18 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Madhup's Notes</title>
-  <style>
-    body { font-family: sans-serif; max-width: 700px; margin: 40px auto; }
-    ul { line-height: 2; }
-    a { text-decoration: none; color: #2563eb; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Madhup's Notes</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --card: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --accent: #60a5fa;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  header {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 32px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2rem;
+    margin: 0 0 8px;
+  }
+  header p {
+    color: var(--muted);
+    margin: 0;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px 64px;
+  }
+  .note {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  .note:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+  }
+  .note-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .note-meta {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+    padding-bottom: 40px;
+  }
+</style>
 </head>
 <body>
-  <h1>Notes & Write-ups</h1>
-  <ul>
-    <li><a href="pdfs/squares-of-uncommon-numbers.pdf" target="_blank">Computing Squares of Uncommon Numbers Efficiently</a></li>
-  </ul>
+
+<header>
+  <h1>Madhup's Notes</h1>
+  <p>Write-ups and shortcuts I've worked out, as PDFs.</p>
+</header>
+
+<main>
+  <a class="note" href="pdfs/squares-of-uncommon-numbers.pdf" target="_blank">
+    <div class="note-title">Computing Squares of Uncommon Numbers Efficiently</div>
+    <div class="note-meta">PDF · September 2026</div>
+  </a>
+
+  <!-- Add more notes below, same format -->
+  <!--
+  <a class="note" href="pdfs/another-note.pdf" target="_blank">
+    <div class="note-title">Title of the note</div>
+    <div class="note-meta">PDF · Month Year</div>
+  </a>
+  -->
+</main>
+
+<footer>
+  Updated as new notes are written.
+</footer>
+
 </body>
 </html>
