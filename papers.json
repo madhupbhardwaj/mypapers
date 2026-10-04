@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "title": "Introductory Logarithms",
+    "pdf": "./papers/logarithms.pdf"
+  },
+  {
+    "title": "Computing Uncommon Squares Efficiently",
+    "pdf": "./papers/squares-of-uncommon-numbers.pdf"
+  }
+]
