@@ -7,4 +7,9 @@
     "title": "Computing Uncommon Squares Efficiently",
     "pdf": "./papers/squares-of-uncommon-numbers.pdf"
   }
+  {
+    "title": "Derivatives: A new perspective",
+    "pdf": "./papers/derivatives-perspective.pdf" 
+
+  }
 ]
